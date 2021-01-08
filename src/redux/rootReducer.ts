@@ -4,7 +4,7 @@ const initialState = { // this is your initial state.
 };
 
 function rootReducer(state = initialState, action: any) {
-	console.log(state, state.counter, action, 'switch')
+	// console.log(state, state.counter, action, 'switch')
 	switch (action.type) {
 		case "Increase":
 			return {...state, counter: state.counter + action.payload};
